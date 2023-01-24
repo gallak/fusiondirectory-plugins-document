@@ -1,0 +1,34 @@
+information :
+  name : "document"
+  description : "plugin wich allow to generatye or prinf pdf file from template to pdf"
+  version : "0.1"
+  authors : ['antoine.gallavardin@free.fr']
+  status : "dev"
+  screenshotUrl:
+   - https://github.com/gallak/fusiondirectory-plugins-document/wiki/screenshot1.png
+  logoUrl : https://github.com/gallak/fusiondirectory-plugins-document/wiki/logo.png
+  tags : ["document","information","plugin" ]
+  license : "GPLv2"
+  origin : "source"
+
+support :
+  provider : "community"
+  homeUrl : "https://github.com/gallak/fusiondirectory-plugins-document"
+  ticketUrl : "https://github.com/gallak/fusiondirectory-plugins-document/issues"
+  discussionUrl : "https://github.com/gallak/fusiondirectory-plugins-document/wiki"
+  downloadUrl: "https://github.com/gallak/fusiondirectory-plugins-document.tgz"
+  schemaUrl : "https://schemas.fusiondirectory.info/"
+
+requirement:
+  fdVersion : 1.4
+  phpVersion : 7.2.0
+
+content :
+  fileList :
+  - './admin/systems/document/class_documentConfig.inc'
+  - './include/document/class_pdfBuilder.inc'
+  - './admin/systems/document/class_document.inc'
+  - './admin/systems/class_documentConfig.inc'
+  - './locale/fr/fusiondirectory.po'
+  - './locale/en/fusiondirectory.po'
+  - './contrib/openldap/document-fd-conf.schema'

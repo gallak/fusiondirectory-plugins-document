@@ -1,0 +1,34 @@
+##
+## document-fd-conf.schema - Needed by Fusion Directory for managing Taxonomy
+##
+
+# Attributes
+attributetype ( 1.3.6.1.4.1.38414.132.1.1 NAME 'fdDocumentList'
+  DESC 'FusionDirectory - Printable List Document'
+  EQUALITY caseExactIA5Match
+  SUBSTR caseExactIA5SubstringsMatch
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.26
+  )
+
+attributetype ( 1.3.6.1.4.1.38414.132.1.2 NAME 'fdDocumentPrintCommand'
+  DESC 'FusionDirectory - Print command'
+  EQUALITY caseExactIA5Match
+  SUBSTR caseExactIA5SubstringsMatch
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.26
+  SINGLE-VALUE)
+
+attributetype ( 1.3.6.1.4.1.38414.132.1.3 NAME 'fdDocumentPrintFolder'
+  DESC 'FusionDirectory - Print Folder'
+  EQUALITY caseExactIA5Match
+  SUBSTR caseExactIA5SubstringsMatch
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.26
+  SINGLE-VALUE)
+
+# Object Class
+objectclass ( 1.3.6.1.4.1.38414.132.2.1 NAME 'fdDocumentPluginConf'
+  DESC 'FusionDirectory Document plugin configuration'
+  SUP top AUXILIARY
+  MUST ( cn )
+  MAY (
+    fdDocumentList $ fdDocumentPrintCommand $ fdDocumentPrintFolder
+  ) )

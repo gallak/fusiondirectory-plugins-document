@@ -1,0 +1,98 @@
+# Traduction of urbackup plugin.
+# Copyright (C) YEAR FusionDirectory Project
+# This file is distributed under the same license as the FusionDirectory package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+# Translators:
+# Antoine Gallavardin <antoine.gallavardin@freee.fr>, 2021
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: FusionDirectory VERSION\n"
+"POT-Creation-Date: 2022-02-23 17:03+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Language-Team: French\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+
+
+msgid "download"
+msgstr "Download"
+
+msgid "print"
+msgstr "Print"
+
+msgid "Document"
+msgstr "Document"
+
+msgid "Document generator"
+msgstr "Document generator"
+
+msgid "Output request"
+msgstr "Output request"
+
+msgid "Output required by user"
+msgstr "Output required by user"
+
+msgid "Generate file"
+msgstr "Generate file"
+
+msgid "Generate PDF by file or printing"
+msgstr "Generate PDF by file or printing"
+
+msgid "Generate PDF"
+msgstr "Generate PDF"
+
+msgid "Document configuration"
+msgstr "Document configuration"
+
+msgid "FusionDirectory Document plugin configuration"
+msgstr "FusionDirectory Document plugin configuration"
+
+msgid "Cannot read folder: \"%s\""
+msgstr "Cannot read folder: \"%s\""
+
+msgid "Print Command"
+msgstr "Print Command"
+
+msgid "Print Command, first argument is the printer , second one the document"
+msgstr "Print Command, first argument is the printer , second one the document"
+
+msgid "Print Folder"
+msgstr "Print Folder"
+
+msgid "Document list"
+msgstr "Document list"
+
+msgid "ObjectType"
+msgstr "ObjectType"
+
+msgid "Type of object related to"
+msgstr "Type of object related to"
+
+msgid "Label of Document"
+msgstr "Label of Document"
+
+msgid "Description"
+msgstr "Description"
+
+msgid "Description of Document"
+msgstr "Description of Document"
+
+msgid "Action"
+msgstr "Action"
+
+msgid "Policy of document"
+msgstr "Policy of document"
+
+msgid "printer/filename"
+msgstr "printer/filename"
+
+msgid "Default printer for document or filename"
+msgstr "Default printer for document or filename"
+
+msgid "Result of print command"
+msgstr "Result of print command"

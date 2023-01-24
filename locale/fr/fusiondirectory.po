@@ -1,0 +1,96 @@
+# Traduction of urbackup plugin.
+# Copyright (C) YEAR FusionDirectory Project
+# This file is distributed under the same license as the FusionDirectory package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+# Translators:
+# Antoine Gallavardin <antoine.gallavardin@freee.fr>, 2021
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: FusionDirectory VERSION\n"
+"POT-Creation-Date: 2022-02-23 17:03+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Language-Team: French\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "download"
+msgstr "Téléchargement"
+
+msgid "print"
+msgstr "Impression"
+
+msgid "Document"
+msgstr "Document"
+
+msgid "Document generator"
+msgstr "Générateur de document"
+
+msgid "Output request"
+msgstr "Sortie demandée"
+
+msgid "Output required by user"
+msgstr "Sortie demandée par l'utilisateur"
+
+msgid "Generate file"
+msgstr "Générer un fichier PDF"
+
+msgid "Generate PDF by file or printing"
+msgstr "Générer un PDF pour impression ou téléchargement"
+
+msgid "Generate PDF"
+msgstr "Générer un PDF"
+
+msgid "Document configuration"
+msgstr "Configuration du document"
+
+msgid "FusionDirectory Document plugin configuration"
+msgstr "Configuration du plugin FusionDirectory Document"
+
+msgid "Cannot read folder: \"%s\""
+msgstr "Impossible de lire le dossier: \"%s\""
+
+msgid "Print Command"
+msgstr "Commande d'impression"
+
+msgid "Print Command, first argument is the printer , second one the document"
+msgstr "Commande d'impression, le premier paramètre est le nom de l'imprimante et le deuxieme le nom du ficheir"
+
+msgid "Print Folder"
+msgstr "Dossier d'impression"
+
+msgid "Document list"
+msgstr "Liste des documents"
+
+msgid "ObjectType"
+msgstr "Type d'objet"
+
+msgid "Type of object related to"
+msgstr "Type d'objet associé"
+
+msgid "Label of Document"
+msgstr "Désignation du document"
+
+msgid "Description"
+msgstr "Description"
+
+msgid "Description of Document"
+msgstr "Description du document"
+
+msgid "Action"
+msgstr "Action"
+
+msgid "Policy of document"
+msgstr "Règles du document"
+
+msgid "printer/filename"
+msgstr "imprimante/nom de fichier"
+
+msgid "Default printer for document or filename"
+msgstr "Imprimante par défaut pour le document ou nom de fichier"
+
+msgid "Result of print command"
+msgstr "Resultat de l'impression"
