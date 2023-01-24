@@ -36,8 +36,8 @@ fusiondirectory-setup --update-cache --update-locales
 ```
 
 This plugin need :
-php-fpdf extension in order to generate PDF
-php-yaml extension in order to read template system base on yaml
+  * php-fpdf extension in order to generate PDF
+  * php-yaml extension in order to read template system base on yaml
 
 ### Allow  printing
 
@@ -83,6 +83,5 @@ And this line in sudoers files
     www-data        ALL=(roneo) NOPASSWD: /usr/bin/lp
 
 
-### usage
-
+#### Examples
 
