@@ -94,3 +94,6 @@ msgstr "Imprimante par défaut pour le document ou nom de fichier"
 
 msgid "Result of print command"
 msgstr "Resultat de l'impression"
+
+msgid "Error while file generation"
+msgstr "Erreur pendant la génération du fichier"

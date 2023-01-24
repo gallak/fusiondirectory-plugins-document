@@ -141,7 +141,7 @@ class pdfBuilder {
 			try{
 				$this->pdfObject->Output('F', $this->output['name']);
 			}catch(Exception $ex){
-				print("Erreur dans la géneration du fichier".$ex->getMessage());
+        msg_dialog::display(_('Error while file generation'), $ex->getMessage() ,INFO_DIALOG);
 			}
 			break;
       
@@ -162,7 +162,7 @@ class pdfBuilder {
 			break;
 
     }
-    //unlink($full_file_path);
+    unlink($full_file_path);
   }
   
 }

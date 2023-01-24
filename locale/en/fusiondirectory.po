@@ -96,3 +96,6 @@ msgstr "Default printer for document or filename"
 
 msgid "Result of print command"
 msgstr "Result of print command"
+
+msgid "Error while file generation"
+msgstr "Error while file generation"
