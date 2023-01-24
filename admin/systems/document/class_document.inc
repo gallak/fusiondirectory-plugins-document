@@ -83,7 +83,6 @@ class document extends simplePlugin
   // return working directory 
   function getFdTempDir() : string{
     global $config;
-    //return($config->data['MAIN']['TEMPLATECOMPILEDIRECTORY']);
     return($config->get_cfg_value('DocumentPrintFolder', "/var/cache/fusiondirectory/tmp"));
   } 
 
