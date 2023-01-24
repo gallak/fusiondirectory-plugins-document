@@ -85,3 +85,17 @@ And this line in sudoers files
 
 #### Examples
 
+##### Document configuration
+(/docs/document-configuration.png)
+##### Document generation
+(/docs/document-usage.png)
+##### Document examples
+  * template
+(/docs/examples/user_cardtemplate.tpl)
+
+  * PDF generated ( for classical card format)
+
+(/docs/examples/card-example.pdf)
+
+
+
