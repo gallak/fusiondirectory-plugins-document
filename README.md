@@ -1,6 +1,6 @@
 # fusiondirectory-plugins-document
 
-This is a plugin for FusionDirectory that allow to create PDF froem ldap information such :
+This is a plugin for FusionDirectory that allow to create PDF from ldap information such :
   - identity card.
   - information forms
 
@@ -67,14 +67,13 @@ As trigger inside FusionDirectory, it is a good pratice to create a dedicated us
 #### Install requirement for printing   
 
  * install print software
-
-    apt-get --no-install-recommends install cups
+    `apt-get --no-install-recommends install cups`
 
   * add printer and activate filequeue
-
+```
     lpadmin -p myprinter -v ipp://192.168.0.100/printers/MFC7460DN -m everywhere
     cupsaccept myprinter
-
+```
 
 #### create the sudo autorisation
 
@@ -82,20 +81,26 @@ And this line in sudoers files
 
     www-data        ALL=(roneo) NOPASSWD: /usr/bin/lp
 
+#### Create a template
+
+All templates and associated ressources must be located in `/etc/fusiondirectory/document` folder.
+Apache user could access to this folder and the folder used for PDF generator
+An example of template is located in docs folder ![card template](/docs/examples/user_cardtemplate.tpl)
+The small template interpretor is used in the `class_pdfBuilder.inc` file.
+It's use the fabulous fpdf plugin ( see : [FPDF](http://fpdf.org/)
+All X,Y coordonates are absolute from de upper left corner.
+
 
 #### Examples
 
 ##### Document configuration
-(/docs/document-configuration.png)
+![configuration of document type](/docs/document-configuration.png)
 ##### Document generation
-(/docs/document-usage.png)
+![choice of docuement](/docs/document-usage.png)
 ##### Document examples
   * template
-(/docs/examples/user_cardtemplate.tpl)
+![card template](/docs/examples/user_cardtemplate.tpl)
 
   * PDF generated ( for classical card format)
 
-(/docs/examples/card-example.pdf)
-
-
-
+![output example](/docs/examples/card-example.pdf)
