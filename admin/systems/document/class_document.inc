@@ -29,13 +29,17 @@
         global $config;
         $allCurrentTemplates=array();   
         $allTemplates=$config->get_cfg_value('DocumentList', "");
-        foreach($allTemplates as $doc){
+        if (! empty($allCurrentTemplates)){
+          foreach($allTemplates as $doc){
             if (preg_match("/^$parent_type/",$doc)){
                 $templateValues=preg_split("/;/",$doc);
                 $allCurrentTemplates[$templateValues[2]." ("._($templateValues[3]).")"]=$doc;
             }
+          }
+          return($allCurrentTemplates);
+        }else{
+          return(array());
         }
-        return($allCurrentTemplates);
       }
 
 
