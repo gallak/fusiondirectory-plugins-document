@@ -29,7 +29,7 @@
         global $config;
         $allCurrentTemplates=array();   
         $allTemplates=$config->get_cfg_value('DocumentList', "");
-        if (! empty($allCurrentTemplates)){
+        if (! empty($allTemplates)){
           foreach($allTemplates as $doc){
             if (preg_match("/^$parent_type/",$doc)){
                 $templateValues=preg_split("/;/",$doc);
