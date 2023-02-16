@@ -1,21 +1,24 @@
 # fusiondirectory-plugins-document
 
 This is a plugin for FusionDirectory that allow to create PDF from ldap information such :
-  - identity card.
+  - identity card
   - information forms
+  - what you want !
 
 
 ## Why this plugin ?
 
-This plugin allow PDF generation with LDAP data suche image, text.
-The first utilisation is to print acces card to a dedicted printed, it avoid to generate a poor excle file without image.
-with this plugin, it is more simple, got to Document tab, choose type of output, print or download.
+This plugin allow PDF generation with LDAP data such image, text.
+PDF could be downloaded or directly printed to a specific printer
+The first utilisation is to print acces card to a dedicted printed, it avoid to generate a poor excel file without image.
+With this plugin, it is more simple, got to Document tab, choose type of output, print or download.
 
 ## Todo
 
 ## How to install
 
-`git https://github.com/gallak/fusiondirectory-plugins-document.git
+`cd /usr/local/src/
+git https://github.com/gallak/fusiondirectory-plugins-document.git
 mv fusiondirectory-plugins-document document`
 
 ### Installation of ldap schema
@@ -24,15 +27,17 @@ mv fusiondirectory-plugins-document document`
 
 ### Installation of plugin
 
-```fusiondirectory-setup --set-fd_home=/usr/local/share/fusiondirectory --install-plugins
-Setting fd_home to /usr/share/fusiondirectory
+```
+ /usr/local/src/gallak/pluginsmanager/fusiondirectory-plugin-manager --set-fd_home=/usr/local/share/fusiondirectory  --plugin-name=document --plugins-archive=/usr/local/src/gallak --install-plugin
+Setting fd_home to /usr/local/share/fusiondirectory
+plugin document will be used
+Plugins folder /usr/local/src/gallak will be used
 Installing FusionDirectory's plugins
-Where is your plugins archive or folder?:
-<complete current path>            
-Available plugins:
-1:document
-
-fusiondirectory-setup --update-cache --update-locales
+Installing plugin document
+Plugin record exist : cn=document,ou=plugins,ou=fusiondirectory,dc=demo,dc=fusion
+Deleting it !
+Create plugin record
+Scanning and update Class.cache and translations
 ```
 
 This plugin need :
@@ -86,10 +91,9 @@ And this line in sudoers files
 All templates and associated ressources must be located in `/etc/fusiondirectory/document` folder.
 Apache user could access to this folder and the folder used for PDF generator
 An example of template is located in docs folder ![card template](/docs/examples/user_cardtemplate.tpl)
-The small template interpretor is used in the `class_pdfBuilder.inc` file.
+The small template interpretor used is store in the `class_pdfBuilder.inc` file.
 It's use the fabulous fpdf plugin ( see : [FPDF](http://fpdf.org/)
 All X,Y coordonates are absolute from de upper left corner.
-
 
 #### Examples
 
