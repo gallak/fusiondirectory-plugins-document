@@ -36,13 +36,13 @@ msgid "Output required by user"
 msgstr "Sortie demandée par l'utilisateur"
 
 msgid "Generate file"
-msgstr "Générer un fichier PDF"
+msgstr "Générer un fichier"
 
 msgid "Generate PDF by file or printing"
 msgstr "Générer un PDF pour impression ou téléchargement"
 
 msgid "Generate PDF"
-msgstr "Générer un PDF"
+msgstr "Générer le PDF / Lancement de l'impression"
 
 msgid "Document configuration"
 msgstr "Configuration du document"
