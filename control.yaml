@@ -3,7 +3,7 @@ information :
   description : "plugin wich allow to generatye or prinf pdf file from template to pdf"
   version : "0.1"
   authors : ['antoine.gallavardin@free.fr']
-  status : "dev"
+  status : "stable"
   screenshotUrl:
    - https://github.com/gallak/fusiondirectory-plugins-document/wiki/screenshot1.png
   logoUrl : https://github.com/gallak/fusiondirectory-plugins-document/wiki/logo.png
