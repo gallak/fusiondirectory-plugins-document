@@ -5,9 +5,9 @@ information :
   authors : ['antoine.gallavardin@free.fr']
   status : "stable"
   screenshotUrl:
-   - https://github.com/gallak/fusiondirectory-plugins-document/wiki/screenshot1.png
-  logoUrl : https://github.com/gallak/fusiondirectory-plugins-document/wiki/logo.png
-  tags : ["document","information","plugin" ]
+   - "https://raw.githubusercontent.com/gallak/fusiondirectory-plugins-document/main/docs/document-configuration.png"
+   - "https://raw.githubusercontent.com/gallak/fusiondirectory-plugins-document/main/docs/document-usage.png"
+  tags : ["document","information","printer", "card", "pdf","template"]
   license : "GPLv2"
   origin : "source"
 
@@ -16,7 +16,7 @@ support :
   homeUrl : "https://github.com/gallak/fusiondirectory-plugins-document"
   ticketUrl : "https://github.com/gallak/fusiondirectory-plugins-document/issues"
   discussionUrl : "https://github.com/gallak/fusiondirectory-plugins-document/wiki"
-  downloadUrl: "https://github.com/gallak/fusiondirectory-plugins-document.tgz"
+  downloadUrl: "https://github.com/gallak/fusiondirectory-plugins-document/archive/refs/heads/main.zip"
   schemaUrl : "https://schemas.fusiondirectory.info/"
 
 requirement:
@@ -25,10 +25,16 @@ requirement:
 
 content :
   fileList :
-  - './admin/systems/document/class_documentConfig.inc'
-  - './include/document/class_pdfBuilder.inc'
-  - './admin/systems/document/class_document.inc'
-  - './admin/systems/class_documentConfig.inc'
-  - './locale/fr/fusiondirectory.po'
-  - './locale/en/fusiondirectory.po'
-  - './contrib/openldap/document-fd-conf.schema'
+    - './admin/systems/document/class_documentConfig.inc'
+    - './admin/systems/document/class_document.inc'
+    - './LICENSE'
+    - './include/document/class_pdfBuilder.inc'
+    - './README.md'
+    - './docs/examples/card-example.pdf'
+    - './docs/examples/user_cardtemplate.tpl'
+    - './docs/document-usage.png'
+    - './docs/document-configuration.png'
+    - './locale/fr/fusiondirectory.po'
+    - './locale/en/fusiondirectory.po'
+    - './contrib/yaml/description.yaml'
+    - './contrib/openldap/document-fd-conf.schema'
