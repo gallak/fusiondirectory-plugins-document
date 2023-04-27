@@ -7,6 +7,7 @@ information :
   screenshotUrl:
    - "https://raw.githubusercontent.com/gallak/fusiondirectory-plugins-document/main/docs/document-configuration.png"
    - "https://raw.githubusercontent.com/gallak/fusiondirectory-plugins-document/main/docs/document-usage.png"
+  logoUrl : https://raw.githubusercontent.com/gallak/fusiondirectory-plugins-document/main/html/themes/breezy/icons/48/apps/document.png
   tags : ["document","information","printer", "card", "pdf","template"]
   license : "GPLv2"
   origin : "source"
