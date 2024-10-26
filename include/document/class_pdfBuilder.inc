@@ -68,14 +68,19 @@ class pdfBuilder {
           case "image":
             switch($element['content']['source']){
               // source is an variable from data
-              case "variable" : 
-                $temp_image_file = tempnam($this->tmpdir, 'fd-');
-                file_put_contents($temp_image_file,$this->getFirstValue($this->data[$element['content']['value']]));
-                $this->pdfObject->Image($temp_image_file, $element['coord']['X'], $element['coord']['Y'],$element['size']['height'],$element['size']['width'],"JPG");
-                unlink($temp_image_file);
+              case "variable" :
+                if (isset($this->data[$element['content']['value']])){
+					$temp_image_file = tempnam($this->tmpdir, 'fd-');
+					file_put_contents($temp_image_file,$this->getFirstValue($this->data[$element['content']['value']]));
+					$this->pdfObject->Image($temp_image_file, $element['coord']['X'], $element['coord']['Y'],$element['size']['height'],$element['size']['width'],"JPG");
+					unlink($temp_image_file);
+				}
                 break;
               // source a static file
-              default : $this->pdfObject->Image($element['content']['value'], $element['coord']['X'], $element['coord']['Y'],$element['size']['height'],$element['size']['width']);
+              default : 
+				if (file_exists($element['content']['value'])){
+					$this->pdfObject->Image($element['content']['value'], $element['coord']['X'], $element['coord']['Y'],$element['size']['height'],$element['size']['width']);
+				}
                 break;
             }
           break;
