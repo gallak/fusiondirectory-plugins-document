@@ -29,6 +29,9 @@
         global $config;
         $allCurrentTemplates=array();   
         $allTemplates=$config->get_cfg_value('DocumentList', "");
+        if (!is_array($allTemplates)){
+          $allTemplates=array($allTemplates);
+        }
         if (! empty($allTemplates)){
           foreach($allTemplates as $doc){
             if (preg_match("/^$parent_type/",$doc)){
